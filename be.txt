@@ -1,0 +1,42 @@
+<html><body><h3>BEHIND THE SCENES</h3>
+
+<div id="be1" style="cursor:pointer;" onMouseOver="this.style.fontSize='17px'"  onMouseOut="this.style.fontSize='16px'">Rajesh Bhardwaj, Founder & CEO</div>
+<div id="be2" style="font-size:14px;">     Rajesh Bhardwaj, born and raised in New Delhi,is a pioneer in Indian cuisine.
+     He graduated from Institute of Hotel Management in New Delhi. Bhardwaj has
+     brought together a team that shares his vision of bringing the very best in
+     Indian hospitality and cuisine to the world.</div>
+<div id="be3" style="cursor:pointer;" onMouseOver="this.style.fontSize='17px'"  onMouseOut="this.style.fontSize='16px'">David Shah, Operations Manager</div>
+
+<div id="be4" style="cursor:pointer;" onMouseOver="this.style.fontSize='17px'"  onMouseOut="this.style.fontSize='16px'">Vikas Khanna, Executive Chef</div>
+
+<div id="be5" style="cursor:pointer;" onMouseOver="this.style.fontSize='17px'"  onMouseOut="this.style.fontSize='16px'">Michael Dolinski, Beverage Director</div>
+
+<div id="be6" style="cursor:pointer;" onMouseOver="this.style.fontSize='17px'"  onMouseOut="this.style.fontSize='16px'">Shoukat Hussain, Executive Pastry Chef</div>
+
+<div id="be7" style="cursor:pointer;" onMouseOver="this.style.fontSize='17px'"  onMouseOut="this.style.fontSize='16px'">Aliya LeeKong, culnary Consultant</div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){    
+    $("#be2").hide();
+ });
+$("#be1").click(function(){
+    $("#be2").show();
+  });
+$("#be3").click(function(){
+    $("#be2").hide();
+  });
+$("#be4").click(function(){
+    $("#be2").hide();
+  });
+$("#be5").click(function(){
+    $("#be2").hide();
+  });
+$("#be6").click(function(){
+    $("#be2").hide();
+  });  
+$("#be7").click(function(){
+    $("#be2").hide();
+  });    
+</script>  
+</html>

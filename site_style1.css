@@ -1,0 +1,68 @@
+div.g1
+{
+float: right;
+height: 600px;
+width: 1002px;
+background-image: url('ss1.jpg');
+position:relative;
+}
+div.transbox
+{
+background-color: rgba(76,51,26,0.5);
+height:600px;
+width: 1002px;
+}
+
+img.g2
+{
+ top:50px;
+ position:relative;
+ left:200px;
+}
+
+#drop8
+{
+  position:relative;
+  left:7px;
+}
+img.g3
+{
+opacity:0.6;
+position:relative;
+bottom:-140px;
+left:-425px;
+margin:5px;
+cursor:pointer;
+}
+
+img.g6
+{
+position:relative;
+bottom:-130px;
+left:-426px;
+margin:5px;
+cursor:pointer;
+}
+
+img.g4
+{
+opacity:0.6;
+position:relative;
+bottom:-68px;
+left:580px;
+margin:5px;
+cursor:pointer;
+}
+img.g5
+{
+opacity:1;
+position:relative;
+bottom:-60px;
+right:-580px;
+margin:5px;
+cursor:pointer;
+}
+#sel1
+{
+opacity:1;
+}

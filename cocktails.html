@@ -1,0 +1,221 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="site_style1.css">
+<link rel="stylesheet" type="text/css" href="site_style.css">
+</head>
+<body class="body">
+<div class="one">
+<div class="two" >
+<div class="three" >
+<nav class="navigation">
+<ul>
+<span id="drop4"><li><a class="name" href="index.html"><span style="font-size:75px">J</span><span style="font-size:44px">unoon</a>
+</li>
+</span>
+</br></br>
+<span style="font-size:15px">
+<li><a id="drop1" href="aboutus.html">ABOUT US</a>
+<ul id="drop3">
+<li><a href="#">Concept</a></li>
+<li><a href="#">Design</a></li>
+<li><a href="#">Behind the Scenes</a></li>
+<li><a href="#">Hours & Directions</a></li>
+</ul>
+</li>
+<li><a id="drop6" href="menu1.html">MENU'S</a>
+<ul id="drop5">
+<li><a href="#">Lunch Menu</a></li>
+<li><a href="#">Dinner Menu</a></li>
+<li><a href="#">Dessert Menu</a></li>
+</ul>
+</li>
+<li><a id="drop2" href="privateevents.html">PRIVATE EVENTS</a>
+<li><a id="drop9" href="lounge.html">LOUNGE</a>
+<ul id="drop10">
+<li><a href="#">Cocktail Menu</a></li>
+</ul>
+</li>
+<li><a id="drop7" href="gallery1.html">GALLERY</a>
+<ul id="drop8">
+<li><a href="gallery1.html">Restaurant</a></li>
+<li><a href="cuisine.html">Cuisine</a></li>
+<li><a href="cocktails.html">Cocktails</a></li>
+</ul>
+</li>
+</span>
+</ul>
+</nav>
+<a class="awards" href="#awards"><img src="awards.jpg" /></a>
+</div>
+<div class="g1">
+<div class="transbox">
+<a class="temp4" href="reservation.html" target="_blank"><img src="reserve.jpg" /></a> 
+  <img id="img1" class="g2" src="i1.jpg" height=450 width=600/>
+  <img id="sel8" class="g6" src="sel2.jpg" />
+  <img id="sel1" class="g3" src="i1.jpg" height=56 width=75 />
+  <img id="sel2" class="g3" src="i2.jpg" height=56 width=75 />
+  <img id="sel3" class="g3" src="i3.jpg" height=56 width=75 />
+  <img id="sel4" class="g3" src="i4.jpg" height=56 width=75 />
+  <img id="sel5" class="g4" src="i5.jpg" height=56 width=75 />
+  <img id="sel6" class="g4" src="i6.jpg" height=56 width=75 />
+  <img id="sel7" class="g5" src="sel.jpg" />
+</div>  
+</div>
+<div class="five">
+
+	<a class="six" target="_blank" href="https://www.facebook.com/pages/Junoon/207513495932269"><img src="facebooklogo.jpg" alt="Facebook Page"/></a>
+<a class="six" target="_blank" href="https://www.twitter.com/JunoonNY"><img src="twitter-icon.jpg" alt="twitter profile"/></a>
+<p>JUNOON INDIA 27W 24TH ST 10010 TEL-222-490-2100&nbsp;&nbsp;</p>
+</div>
+</div>
+</div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+var sel=true, k=1,l=0,t=0;
+$(document).ready(function(){
+  $("#drop1").click(function(){
+  $("#drop3").show();
+  $("#drop5").hide();
+   $("#drop8").hide();
+    $("#drop10").hide();
+  });
+});
+function dis(j){ 
+for(var i=1; i<=6; i++){
+	 if(i == j){
+		$('#sel' + i).css("opacity", "1");}
+	 else {
+		$('#sel' + i).css("opacity", "0.6");}
+   }
+   if(sel){   
+   $('#img1').attr('src','i' + j + '.jpg');}
+   else{
+   $('#img1').attr('src','j' + (j+6) + '.jpg');}
+}
+function inf(m){ 
+    $('#sel' + m).css("opacity","1");
+	$('#sel' + m).css("height","55");
+	$('#sel' + m).css("width","74");
+}
+function ouf(n){
+$('#sel' + n).css("height","56");
+	$('#sel' + n).css("width","75");
+    if(k == n){
+	$('#sel' + n).css("opacity","1");
+	}
+	else{
+      $('#sel' + n).css("opacity","0.6");
+	  }
+}	  
+$("#sel1").hover(function(){inf(1)},function(){ouf(1)});
+$("#sel2").hover(function(){inf(2)},function(){ouf(2)});
+$("#sel3").hover(function(){inf(3)},function(){ouf(3)});
+$("#sel4").hover(function(){inf(4)},function(){ouf(4)});
+$("#sel5").hover(function(){inf(5)},function(){ouf(5)});
+$("#sel6").hover(function(){inf(6)},function(){ouf(6)});
+$("#sel1").click(function(){
+k=1;dis(1);
+});
+$("#sel2").click(function(){
+k=2;dis(2);
+});
+$("#sel3").click(function(){
+k=3;dis(3);
+});
+$("#sel4").click(function(){
+k=4;dis(4);
+});
+$("#sel5").click(function(){
+k=5;dis(5);
+});
+$("#sel6").click(function(){
+k=6;dis(6);
+});
+ $("#sel7").click(function(){
+   if(t == 1 || k == 6){
+   t=1;
+   sel=false;
+   if(k == 6){
+   $("#sel1").attr('src',"j7.jpg");
+   k=1;
+   dis(k);   
+   $("#sel2").attr('src',"j8.jpg");
+   $("#sel3").attr('src',"j9.jpg");
+   $("#sel4").attr('src',"j10.jpg");
+   $("#sel5").attr('src',"j11.jpg");
+   $("#sel6").attr('src',"j12.jpg");
+   }
+   else{
+    dis(k+1);
+	k++;
+   }   
+   }
+   else{
+   dis(k+1);
+   k++;
+   }
+   return false;
+ });
+ $("#sel8").click(function(){
+   if(t == 2 || k == 1){
+   t=2;
+   sel=true;
+   if(k == 1)
+   {
+   $("#sel1").attr('src',"i1.jpg");
+   k=6;
+   dis(6);   
+   $("#sel2").attr('src',"i2.jpg");
+   $("#sel3").attr('src',"i3.jpg");
+   $("#sel4").attr('src',"i4.jpg");
+   $("#sel5").attr('src',"i5.jpg");
+   $("#sel6").attr('src',"i6.jpg");
+   }
+   else{
+    dis(k-1);
+	k--;
+   }   
+   }
+   else{
+   dis(k-1);
+   k--;
+   }
+   return false;
+ });
+  $("#drop2").click(function(){
+  $("#drop3").hide();
+  $("#drop5").hide();
+   $("#drop8").hide();
+    $("#drop10").hide();
+  });
+  $("#drop4").click(function(){
+  $("#drop3").hide();
+  $("#drop5").hide();
+   $("#drop8").hide();
+    $("#drop10").hide();
+  });
+ 
+  $("#drop10").hide();
+  $("#drop5").hide(); 
+  $("#drop3").hide();
+  
+  $("#drop6").click(function(){
+  $("#drop5").show();
+  $("#drop3").hide();
+   $("#drop8").hide();
+    $("#drop10").hide();
+  });  
+   $("#drop9").click(function(){
+  $("#drop8").show();
+  $("#drop5").hide();
+  $("#drop3").hide();
+  });
+  $("#drop7").click(function(){
+  $("#drop8").show();
+  $("#drop5").hide();
+  $("#drop3").hide();
+   $("#drop10").hide();
+  });
+</script>
+</html>

@@ -1,0 +1,108 @@
+body
+{
+  background-image:url('bg.jpg');
+  background-repeat:repeat;
+  overflow:auto;
+  min-width: 1248px;
+}
+ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+}
+a:link,a:visited
+{
+display:block;
+color:#FFFFFF;
+text-align:left;
+padding:4px;
+text-decoration:none;
+}
+div.one
+{
+background-color: #4C331A;
+height: 640px;
+position:relative;
+padding: 9px;
+margin:10px;
+}
+div.two
+{
+  border-style: double;
+border-width: 4px;
+border-color: white;
+height: 632px;
+position:relative; 
+}
+div.three
+{
+ float: left;
+height: 600px;
+background-image: url('t.jpg');
+position:relative;
+}
+div.four
+{float: right;
+height: 600px;
+width: 1002px;
+background-image: url('ss1.jpg');
+position:relative;
+}
+div.five
+{
+position:relative;
+}
+a.temp4
+{
+  position:absolute;
+  right:5px;
+  float:right; 
+}
+div.temp1
+{ position:relative;
+  bottom:-425px;
+  float:right;
+  margin:5px;
+}
+img.temp5
+{
+  position:relative;
+  bottom:184px;
+  float:right;
+  margin:3px;
+  cursor:pointer;
+}
+nav
+{
+  width:140px;
+  margin:30px;
+
+}
+a.awards
+{
+  position:absolute;
+  left:160px;
+  bottom:-5px;
+}
+a:hover 
+{
+font-weight:bold;
+}
+a.name:hover
+{
+ font-weight:normal;
+}
+a.six
+{
+  float:left;
+}
+p
+{
+  float:right;
+  color:white;
+  font-size:12px;
+  position:relative;
+ bottom:-5px; 
+}

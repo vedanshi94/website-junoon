@@ -1,0 +1,53 @@
+div.m1
+{
+float: right;
+height: 600px;
+width: 1002px;
+background-image: url('spice.jpg');
+position:relative;
+background-size:100%;
+}
+div.transbox
+{
+  width: 590px;
+  height: 597px;
+  background-color: rgba(76,51,26,0.6);
+  border: 3px solid black;
+  float:left;
+  position:relative;
+}
+#close
+{
+  position:relative;
+  float:right;
+  cursor:pointer;
+}
+div.transbox pre
+{
+  font-weight: bold;
+  color: #ffffff;
+  font-family:Arial;
+  font-size:16px;
+}
+#text
+{
+  max-height:494px;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+#text::-webkit-scrollbar {
+    width: 12px;
+}
+#text::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px; 
+    border-radius: 12px;
+}
+#text::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 0 10px rgb(240,255,255);     
+}
+#drop5
+{
+  position:relative;
+  left:7px;
+}

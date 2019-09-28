@@ -1,0 +1,57 @@
+body
+{
+  background-color:#dbe3d4;
+  background-image: url('reservations.jpg');
+  background-repeat: no-repeat;
+  overflow:auto;
+  min-width:1248px;
+  min-height:466px;
+}
+div.one{
+position:relative;
+}
+div.two{
+color:#585858;
+width:500px;
+margin-right:100px;
+padding-top:20px;
+position:relative;
+margin:65px 0 0 50px;
+font-size:100%;
+background:transparent;
+bottom:100px;
+}
+h2{
+font:62.5% Georgia, "Times New Roman", Times, serif;
+font-size:14px;
+line-height:20px;
+}
+a#main
+{
+color: #585858;
+left:50px;
+position:relative;
+bottom:24px;
+text-align:left;
+text-decoration:none;
+}
+div.three
+{
+position:relative;
+color: #585858;
+margin-left:50px;
+top:-50px;
+font:62.5% Georgia, "Times New Roman", Times, serif;
+font-size:16px;
+line-height:20px;
+}
+.sub{
+color:#FFFFFF;
+font-weight:bold;
+padding: 0 15px 3px 15px;
+background-color:#900;
+cursor:pointer;
+}
+.sub:hover{
+background-color:red;
+}

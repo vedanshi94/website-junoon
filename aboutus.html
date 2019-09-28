@@ -1,0 +1,209 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="site_style3.css">
+<link rel="stylesheet" type="text/css" href="site_style.css">
+</head>
+<body class="body">
+<div class="one">
+<div class="two" >
+<div class="three" >
+<nav class="navigation">
+<ul>
+<span id="drop4"><li><a class="name" href="index.html"><span style="font-size:75px">J</span><span style="font-size:44px">unoon</a>
+</li>
+</span>
+</br></br>
+<span style="font-size:15px">
+<li><a id="drop1" href="aboutus.html">ABOUT US</a>
+<ul id="drop3">
+<li id="con"><a href="#">Concept</a></li>
+<li id="design"><a href="#">Design</a></li>
+<li id="behind"><a href="#">Behind the Scenes</a></li>
+<li id="hd"><a href="#">Hours & Directions</a></li>
+</ul>
+</li>
+<li><a id="drop6" href="menu1.html">MENU'S</a>
+<ul id="drop5">
+<li><a href="#">Lunch Menu</a></li>
+<li><a href="#">Dinner Menu</a></li>
+<li><a href="#">Dessert Menu</a></li>
+</ul>
+</li>
+<li><a id="drop2" href="privateevents.html">PRIVATE EVENTS</a></li>
+<li><a id="drop9" href="lounge.html">LOUNGE</a>
+<ul id="drop10">
+<li><a href="#">Cocktail Menu</a></li>
+</ul>
+</li>
+<li><a id="drop7" href="gallery1.html">GALLERY</a>
+<ul id="drop8">
+<li><a href="gallery1.html">Restaurant</a></li>
+<li><a href="#">Cuisine</a></li>
+<li><a href="#">Cocktails</a></li>
+</ul>
+</li>
+</span>
+</ul>
+</nav>
+<a class="awards" href="#awards"><img src="awards.jpg" /></a>
+</div>
+<div id="img" class="a1">
+      <a class="temp4" href="reservation.html" target="_blank"><img src="reserve.jpg" /></a> 
+	  <div id="des" class="transbox">
+	  <img id="close" src="close-button.jpg"/>
+	  <pre id="text">
+	  
+	  CALL 212 490 2100 OR EMAIL US AT RESERVATIONS@JUNOON.COM
+	  
+	  HOURS OF OPERATIONS 
+	     LUNCH 
+		   MONDAY-FRIDAY               12:00PM-3:00PM
+		   SUNDAY				    12:00PM-3:00PM
+		   SATURDAY    			    12:00PM-3:00PM
+		   
+	     DINNER
+		   SUNDAY-THURSDAY         5:30PM-10:30PM
+		   FRIDAY                                   5:30PM-11:30PM
+		   SATURDAY                            5:30PM-11:30PM
+		   
+	     LOUNGE
+                   9:00PM-CLOSE
+
+				   
+				   
+             Junoon
+                   27W 24TH ST 
+                   INDIA 10010
+                   TEL 222-490-2100
+                   INFO@JUNOON.COM			   
+       </pre>
+      <div id="googleMap" style="width:300px;height:200px;"></div>	   
+	  </div>
+</div>
+<div class="five">
+
+	<a class="six" target="_blank" href="https://www.facebook.com/pages/Junoon/207513495932269"><img src="facebooklogo.jpg" alt="Facebook Page"/></a>
+<a class="six" target="_blank" href="https://www.twitter.com/JunoonNY"><img src="twitter-icon.jpg" alt="twitter profile"/></a>
+<p>JUNOON INDIA 27W 24TH ST 10010 TEL-222-490-2100&nbsp;&nbsp;</p>
+
+</div>
+</div>
+</div>	  
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#close").click(function(){
+    $(this).hide();
+    $("#des").hide();
+  });
+ });
+ $("#drop8").hide();
+  $("#drop5").hide();
+   $("#drop10").hide();
+ $("#design").click(function(){
+    $("#text").load("design.txt");
+	$("#img").css("background-image", "url(design.jpg)");
+    $("#close").show();
+    $("#des").show();
+	$("#googleMap").hide();
+  });
+ $("#con").click(function(){
+    $("#text").load("concept.txt");
+	$("#img").css("background-image", "url(concept.jpg)");
+    $("#close").show();
+    $("#des").show();
+	$("#googleMap").hide();
+  });
+  $("#behind").click(function(){
+    $("#text").load("be.txt");
+	$("#img").css("background-image", "url(be.jpg)");
+    $("#close").show();
+    $("#des").show();
+	$("#googleMap").hide();
+  });
+  $("#hd").click(function(){
+    $("#text").load("hours.txt");
+	$("#img").css("background-image", "url(background-location.jpg)");
+    $("#close").show();
+    $("#des").show();
+	$("#googleMap").hide();
+  });
+  $("#drop1").click(function(){
+  $("#drop5").hide();
+   $("#drop8").hide();
+   $("#drop10").hide();
+  });
+
+  $("#drop2").click(function(){
+  $("#drop3").hide();
+  $("#drop5").hide();
+   $("#drop8").hide();
+    $("#drop10").hide();
+  });
+
+  $("#drop4").click(function(){
+  $("#drop3").hide();
+  $("#drop5").hide();
+   $("#drop8").hide();
+    $("#drop10").hide();
+  });
+    
+  $("#drop6").click(function(){
+  $("#drop3").hide();
+   $("#drop8").hide();
+    $("#drop10").hide();
+  });
+  
+  $("#drop9").click(function(){
+  $("#drop3").hide();
+  $("#drop5").hide();
+   $("#drop8").hide();
+  });
+
+  $("#drop7").click(function(){
+  $("#drop8").hide();
+  $("#drop5").hide();
+  $("#drop3").hide();
+   $("#drop10").hide();
+  });
+</script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+</script>
+<script>  
+var myCenter=new google.maps.LatLng(40.74307491059263,-73.99083450436592);  
+function initialize()
+{
+var mapProp = {
+  center: myCenter,
+  zoom:15,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+  title:'Click to zoom'
+  });
+
+marker.setMap(map);
+google.maps.event.addListener(marker,'click',function() {
+  map.setZoom(19);
+  map.setCenter(marker.getPosition());
+  });
+     
+google.maps.event.addListener(map,'center_changed',function() {
+// 10 seconds after the center of the map has changed, pan back to the marker
+  window.setTimeout(function() {
+    map.panTo(marker.getPosition());
+  },10000);
+  });
+  var infowindow = new google.maps.InfoWindow({
+  content:"Junoon"
+  });
+  infowindow.open(map,marker);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</html>

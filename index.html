@@ -1,0 +1,146 @@
+<html>
+<head>
+<script type="text/javascript">
+var imageArray = new Array(); 
+
+// Specify number of milliseconds between image switches.
+var switchMilliseconds = 2000;
+
+var divID = 'testing';
+
+imageArray[0] = 'ss1.jpg';
+imageArray[1] = 'ss2.jpg';
+imageArray[2] = 'ss3.jpg';
+imageArray[3] = 'ss4.jpg';
+imageArray[4] = 'ss5.jpg';
+
+function publishPicture(i) {
+document.getElementById(divID).style.background = 'url("'+imageArray[i]+'")';
+i++;
+if( i > (imageArray.length - 1) ) 
+{ i = 0; }
+setTimeout('publishPicture('+i+')',switchMilliseconds);
+}
+
+</script>
+<link rel="stylesheet" type="text/css" href="site_style.css">
+
+</head>
+<body class="body">
+<div class="one">
+<div class="two" >
+<div class="three" >
+<nav class="navigation">
+<ul>
+<li><a id="drop4" class="name" href="#"><span style="font-size:75px">J</span><span style="font-size:44px">unoon</a>
+</li>
+</br></br>
+<span style="font-size:15px">
+<li><a id="drop1" href="aboutus.html">ABOUT US</a>
+<ul id="drop3">
+<li><a href="#">Concept</a></li>
+<li><a href="#">Design</a></li>
+<li><a href="#">Behind the Scenes</a></li>
+<li><a href="#">Hours & Directions</a></li>
+</ul>
+</li>
+<li><a id="drop6" href="menu1.html">MENU'S</a>
+<ul id="drop5">
+<li><a href="#">Lunch Menu</a></li>
+<li><a href="#">Dinner Menu</a></li>
+<li><a href="#">Dessert Menu</a></li>
+</ul>
+</li>
+<li><a id="drop2" href="privateevents.html">PRIVATE EVENTS</a></li>
+<li><a id="drop9" href="lounge.html">LOUNGE</a>
+<ul id="drop10">
+<li><a href="#">Cocktail Menu</a></li>
+</ul></li>
+<li><a id="drop7" href="gallery1.html">GALLERY</a>
+<ul id="drop8">
+<li><a href="gallery1.html">Restaurant</a></li>
+<li><a href="#">Cuisine</a></li>
+<li><a href="#">Cocktails</a></li>
+</ul>
+</li>
+</span>
+</ul>
+</nav>
+<a class="awards" href="#awards"><img src="awards.jpg" /></a>
+</div>
+
+    <div class="four"  id="testing">
+    <div class="temp1">
+	<a id="sp" class="temp3" href="#spmenu"><img src="spmenu.jpg" /></a>
+	<img id="close" class="temp5" src="close.jpg"/>
+    </div>	
+        <a class="temp4" href="reservation.html" target="_blank"><img src="reserve.jpg" /></a> 
+    </div>
+	
+	<div class="five">
+
+	<a class="six" target="_blank" href="https://www.facebook.com/pages/Junoon/207513495932269"><img src="facebooklogo.jpg" alt="Facebook Page"/></a>
+<a class="six" target="_blank" href="https://www.twitter.com/JunoonNY"><img src="twitter-icon.jpg" alt="twitter profile"/></a>
+<p>JUNOON INDIA 27W 24TH ST 10010 TEL-222-490-2100&nbsp;&nbsp;</p>
+
+</div>
+</div>
+</div>
+<script>publishPicture(0);</script>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#close").click(function(){
+    $(this).hide();
+    $("#sp").hide();
+  });
+ });
+
+  $("#drop1").click(function(){
+  $("#drop3").show();
+  $("#drop5").hide();
+   $("#drop8").hide();
+   $("#drop10").hide();
+  });
+
+  $("#drop2").click(function(){
+  $("#drop3").hide();
+  $("#drop5").hide();
+   $("#drop8").hide();
+   $("#drop10").hide();
+  });
+ 
+  $("#drop4").click(function(){
+  $("#drop3").hide();
+  $("#drop5").hide();
+   $("#drop8").hide();
+   $("#drop10").hide();
+  });
+ 
+  $("#drop5").hide();
+  $("#drop8").hide(); 
+  $("#drop3").hide();
+  $("#drop10").hide();
+  
+  $("#drop6").click(function(){
+  $("#drop5").show();
+  $("#drop3").hide();
+   $("#drop8").hide();
+   $("#drop10").hide();
+  });
+
+  $("#drop7").click(function(){
+  $("#drop8").show();
+  $("#drop5").hide();
+  $("#drop3").hide();
+  $("#drop10").hide();
+  });
+  $("#drop9").click(function(){
+  $("#drop10").show();
+  $("#drop8").hide();
+  $("#drop5").hide();
+  $("#drop3").hide();
+  });
+</script>
+</html>

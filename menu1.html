@@ -1,0 +1,167 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="site_style.css">
+<link rel="stylesheet" type="text/css" href="site_style2.css">
+</head>
+<body class="body">
+<div class="one">
+<div class="two" >
+<div class="three" >
+<nav class="navigation">
+<ul>
+<span id="drop4"><li><a class="name" href="index.html"><span style="font-size:75px">J</span><span style="font-size:44px">unoon</a>
+</li>
+</span>
+</br></br>
+<span style="font-size:15px">
+<li><a id="drop1" href="aboutus.html">ABOUT US</a>
+<ul id="drop3">
+<li><a href="#">Concept</a></li>
+<li><a href="#">Design</a></li>
+<li><a href="#">Behind the Scenes</a></li>
+<li><a href="#">Hours & Directions</a></li>
+</ul>
+</li>
+<li><a id="drop6" href="menu1.html">MENU'S</a>
+<ul id="drop5">
+<li id="lm"><a href="#">Lunch Menu</a></li>
+<li id="dm"><a href="#">Dinner Menu</a></li>
+<li id="det"><a href="#">Dessert Menu</a></li>
+</ul>
+</li>
+<li><a id="drop2" href="privateevents.html">PRIVATE EVENTS</a>
+<li><a id="drop9" href="lounge.html">LOUNGE</a>
+<ul id="drop10">
+<li><a href="#">Cocktail Menu</a></li>
+</ul>
+</li>
+<li><a id="drop7" href="gallery1.html">GALLERY</a>
+<ul id="drop8">
+<li><a href="gallery1.html">Restaurant</a></li>
+<li><a href="#">Cuisine</a></li>
+<li><a href="#">Cocktails</a></li>
+</ul>
+</li>
+</span>
+</ul>
+	</nav>
+	<a class="awards" href="#awards"><img src="awards.jpg" /></a>
+</div>
+<div id="img" class="m1">
+      <a class="temp4" href="reservation.html" target="_blank"><img src="reserve.jpg" /></a> 
+	  <div id="des" class="transbox">
+	  <img id="close" src="close-button.jpg"/>
+	  <pre>
+<h1><div id="header">	  
+REFINED CUISINE</div></h1>
+<div id="text">	         The culinary team at Junoon presents a menu of traditional and
+		 contemporary Indian cuisine that showcases the centuries of 
+		 India's culinary history while exploring the future of this classic
+		 cuisine.The core of our menu is traditional cuisine from the vast
+		 culinary regions of India that features the most celebrated five 
+		 elements of cooking, with appetizers and tasting menus that 
+		 reflect Junoon's modern interpretations.
+		 
+		 
+TANDOOR  -  CLAY  OVEN           TAWA -  CAST  IRON  COOKING
+
+ 	                       SIGRI  -  OPEN  FIRE  PIT
+						   
+HANDI  -  CURRY 	                    PATTHAR  -  STONE  COOKING
+
+		 
+                 We continuously endeavour to improve the purest traditional Indian 
+		 cuisine, while simultaneously creating innovative, modern dishes. 
+		 In this pursuit we make a concerted effort to utilize organically 
+		 farmed seasonal produce from local sustainable farms as often as 
+		 we can. Please join us for the finest dining experience of food, hospitality,
+		 and luxury that Indian cuisine can offer.                
+</div> 		 
+		 </pre>
+	  </div>
+</div>
+<div class="five">
+
+	<a class="six" target="_blank" href="https://www.facebook.com/pages/Junoon/207513495932269"><img src="facebooklogo.jpg" alt="Facebook Page"/></a>
+<a class="six" target="_blank" href="https://www.twitter.com/JunoonNY"><img src="twitter-icon.jpg" alt="twitter profile"/></a>
+<p>JUNOON INDIA 27W 24TH ST 10010 TEL-222-490-2100&nbsp;&nbsp;</p>
+
+</div>
+</div>
+</div>
+	  
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#close").click(function(){
+    $(this).hide();
+    $("#des").hide();
+  });
+ });
+ 
+  $("#drop1").click(function(){
+  $("#drop3").show();
+  $("#drop5").hide();
+   $("#drop8").hide();
+   $("#drop10").hide();
+  });
+   $("#lm").click(function(){
+    $("#header").text("JUNOON LUNCH MENU");
+    $("#text").load("lunch.txt");
+	$("#img").css("background-image", "url(ss3.jpg)");
+    $("#close").show();
+    $("#des").show();
+  });
+   $("#dm").click(function(){
+    $("#header").text("JUNOON DINNER MENU");
+    $("#text").load("dinner.txt");
+	$("#img").css("background-image", "url(dinner.jpg)");
+    $("#close").show();
+    $("#des").show();
+  });
+  $("#det").click(function(){
+    $("#header").text("DESSERTS");
+    $("#text").load("dessert.txt");
+	$("#img").css("background-image", "url(det.jpg)");
+    $("#close").show();
+    $("#des").show();
+  });
+  $("#drop2").click(function(){
+  $("#drop3").hide();
+  $("#drop5").hide();
+   $("#drop8").hide();
+    $("#drop10").hide();
+  });
+
+  $("#drop4").click(function(){
+  $("#drop3").hide();
+  $("#drop5").hide();
+   $("#drop8").hide();
+    $("#drop10").hide();
+  });
+ $("#drop3").hide();
+ $("#drop8").hide(); 
+  $("#drop10").hide();
+  
+  $("#drop6").click(function(){
+  $("#drop3").hide();
+   $("#drop8").hide();
+   $("#drop10").hide();
+  });
+  
+  $("#drop9").click(function(){
+  $("#drop8").show();
+  $("#drop5").hide();
+  $("#drop3").hide();
+  });
+
+  $("#drop7").click(function(){
+  $("#drop8").show();
+  $("#drop5").hide();
+  $("#drop3").hide();
+  $("#drop10").hide();
+  });
+
+</script>
+</html>
